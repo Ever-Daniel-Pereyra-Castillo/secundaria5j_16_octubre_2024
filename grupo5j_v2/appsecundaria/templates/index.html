@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang = "es">
+<head>
+    <title>Ewer</title>
+    <link rel="stylesheet" href= '{% static  'estilos.css' %}'>
+</head>
+<body>
+    <h1>MI PAGINA</h1>
+    <p>Ever Pereyra</p>
+    <hr>
+       {% for i in objeto %}
+       <li> {{i.Nombre}}</li>
+       {% endfor %} 
+    </hr>
+    <script src="{% static 'script.js' %}"></script>
+</body>
+</html>
